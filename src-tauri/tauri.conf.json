@@ -29,7 +29,7 @@
   },
   "plugins": {
     "updater": {
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDM0MjlBRjlCQzhDMDlGQTYKUldTbW44REltNjhwTk43NUdxajg3QVBEV3Y3RUlpMGhzc0J4bml1RFd5UE5Kdk0waGZ2SnlVNCsK",
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDI3NUQ1QTY3QjZGMkVGRUEKUldUcTcvSzJaMXBkSjR1VUlvWmR6d255SXMrWmZSWWQ4bjdQdldvSE1vNzNVczVKR3oxRVhwM1QK",
       "endpoints": [
         "https://github.com/omenop/Avehost/releases/latest/download/latest.json"
       ]
