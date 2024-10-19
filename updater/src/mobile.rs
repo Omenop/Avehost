@@ -34,7 +34,7 @@ pub struct Updater<R: Runtime>(AppHandle<R>, PluginHandle<R>);
 impl<R: Runtime> Updater<R> {
   pub async fn get_release(&self) -> crate::Result<Release> {
     let response: Release = CLIENT
-      .get("https://api.github.com/repos/amber-dchat/application/releases/latest")
+      .get("https://api.github.com/repos/omenop/avehost/releases/latest")
       .send()
       .await?
       .json()

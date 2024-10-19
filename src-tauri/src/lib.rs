@@ -51,7 +51,7 @@ fn ready(window: WebviewWindow) {
 async fn launch(mut window: WebviewWindow, _app: AppHandle) {
     #[cfg(mobile)]
     {
-        let _ = window.navigate(Url::parse("https://amber-dchat.github.io/").unwrap());
+        let _ = window.navigate(Url::parse("https://panel.avehost.ir/").unwrap());
     }
 
     #[cfg(desktop)]
@@ -63,7 +63,7 @@ async fn launch(mut window: WebviewWindow, _app: AppHandle) {
         let url = WebviewUrl::External(Url::parse("http://localhost:3000/").unwrap());
         
         #[cfg(not(debug_assertions))]
-        let url = WebviewUrl::External(Url::parse("https://amber-dchat.github.io/").unwrap());
+        let url = WebviewUrl::External(Url::parse("https://panel.avehost.ir/").unwrap());
 
         let w = WebviewWindowBuilder::new(&_app, "chatapplication", url)
             .title("Amber DChat")

@@ -5,9 +5,9 @@
   "windows": ["splash", "chatapplication"],
   "remote": {
     "urls": [
-      "https://amber-dchat.github.io/*",
-      "https://amber-dchat.github.io",
-      "https://amber-dchat.github.io/"
+      "https://panel.avehost.ir/*",
+      "https://panel.avehost.ir",
+      "https://panel.avehost.ir/"
     ]
   },
   "permissions": [
