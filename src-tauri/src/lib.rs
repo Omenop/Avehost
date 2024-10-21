@@ -3,12 +3,6 @@ use tauri::{AppHandle, Emitter, Manager, Url, WebviewWindow};
 #[cfg(desktop)]
 use tauri::{WebviewUrl, WebviewWindowBuilder};
 
-#[cfg(mobile)]
-use ahq_updater as updater;
-
-#[cfg(desktop)]
-use tauri_plugin_updater as updater;
-
 #[cfg(desktop)]
 use rpc_server::bootstrap;
 
@@ -19,8 +13,7 @@ use updater::UpdaterExt;
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
-    let builder = tauri::Builder::default()
-        .plugin(updater::Builder::new().build());
+    let builder = tauri::Builder::default();
 
     #[cfg(not(mobile))]
     let builder = builder
@@ -87,22 +80,5 @@ async fn launch(mut window: WebviewWindow, _app: AppHandle) {
 
 #[tauri::command]
 async fn check_update(app: AppHandle) -> updater::Result<()> {
-    let window = app.get_webview_window("splash").unwrap();
-    if let Some(update) = app.updater()?.check().await? {
-        update.download_and_install(|c, t| {
-            let c = c as u64;
-            let total = t.unwrap_or(1);
-
-            let _ = window.emit("update", (c * 100) / total);
-        }, || {
-            let _ = window.emit("update", "Installing");
-        }).await?;
-
-        let _ = window.emit("update", "Installed");
-        app.restart();
-    }
-
-    let _ = window.emit("update", "none");
-
     Ok(())
 }
