@@ -79,6 +79,6 @@ async fn launch(mut window: WebviewWindow, _app: AppHandle) {
 }
 
 #[tauri::command]
-async fn check_update(app: AppHandle) -> updater::Result<()> {
+async fn check_update(app: AppHandle) -> Result<(), ()> {
     Ok(())
 }
