@@ -9,8 +9,6 @@ use rpc_server::bootstrap;
 #[cfg(desktop)]
 mod structs;
 
-use updater::UpdaterExt;
-
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     let builder = tauri::Builder::default();
