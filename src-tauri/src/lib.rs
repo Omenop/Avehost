@@ -15,6 +15,8 @@ use ahq_updater as updater;
 #[cfg(desktop)]
 use tauri_plugin_updater as updater;
 
+use updater::UpdaterExt;
+
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     let builder = tauri::Builder::default()
