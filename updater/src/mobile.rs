@@ -11,7 +11,7 @@ use std::sync::LazyLock;
 use reqwest::{Client, ClientBuilder};
 pub(crate) static CLIENT: LazyLock<Client> = LazyLock::new(|| {
   ClientBuilder::new()
-    .user_agent("Amber DChat Android")
+    .user_agent("Ave Host Android")
     .build()
     .unwrap()
 });

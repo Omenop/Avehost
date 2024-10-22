@@ -43,7 +43,7 @@
     "android": {
       "minSdkVersion": 30
     },
-    "copyright": "Copyright © 2024 Amber DChat",
+    "copyright": "Copyright © 2024 Ave Host",
     "linux": {
       "appimage": {
         "bundleMediaFramework": true,
@@ -72,7 +72,7 @@
       },
       "wix": null
     },
-    "publisher": "Amber DChat",
+    "publisher": "Ave Host",
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",

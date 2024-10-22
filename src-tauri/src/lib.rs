@@ -66,7 +66,7 @@ async fn launch(mut window: WebviewWindow, _app: AppHandle) {
         let url = WebviewUrl::External(Url::parse("https://panel.avehost.ir/").unwrap());
 
         let w = WebviewWindowBuilder::new(&_app, "chatapplication", url)
-            .title("Amber DChat")
+            .title("Ave Host")
             .center()
             .min_inner_size(1024.0, 768.0)
             .closable(true)

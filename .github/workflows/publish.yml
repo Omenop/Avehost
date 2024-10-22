@@ -46,7 +46,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               tag_name: alpha ? `${version}-alpha.${Date.now()}` : version,
-              name: `Amber DChat v${version}${alpha ? " (Testing)": ""}`,
+              name: `Ave Host v${version}${alpha ? " (Testing)": ""}`,
               body: String(fs.readFileSync("./latest.md")),
               draft: true,
               prerelease: alpha

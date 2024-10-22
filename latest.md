@@ -1,1 +1,1 @@
-These are internal releases for Amber DChat.
+These are internal releases for Ave Host.
