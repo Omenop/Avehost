@@ -9,7 +9,6 @@ export function useUpdaterStatus() {
 
   useEffect(() => {
     const window = getCurrentWebviewWindow();
-    invoke("launch");
 
     window.setProgressBar({
       status: ProgressBarStatus.Indeterminate
