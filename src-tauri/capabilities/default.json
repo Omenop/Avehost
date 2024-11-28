@@ -5,9 +5,9 @@
   "windows": ["splash", "chatapplication"],
   "remote": {
     "urls": [
-      "https://panel.avehost.ir/*",
-      "https://panel.avehost.ir",
-      "https://panel.avehost.ir/"
+      "https://panel.avehost.site*",
+      "https://panel.avehost.site",
+      "https://panel.avehost.site/"
     ]
   },
   "permissions": [
