@@ -51,7 +51,7 @@ fn ready(window: WebviewWindow) {
 async fn launch(mut window: WebviewWindow, _app: AppHandle) {
     #[cfg(mobile)]
     {
-        let _ = window.navigate(Url::parse("https://panel.avehost.site/").unwrap());
+        let _ = window.navigate(Url::parse("https://om-cable.vercel.app").unwrap());
     }
 
     #[cfg(desktop)]
@@ -60,10 +60,10 @@ async fn launch(mut window: WebviewWindow, _app: AppHandle) {
         _app.add_capability(include_str!("../debug.json"));
 
         #[cfg(debug_assertions)]
-        let url = WebviewUrl::External(Url::parse("http://localhost:3000/").unwrap());
+        let url = WebviewUrl::External(Url::parse("https://om-cable.vercel.app").unwrap());
         
         #[cfg(not(debug_assertions))]
-        let url = WebviewUrl::External(Url::parse("https://panel.avehost.site").unwrap());
+        let url = WebviewUrl::External(Url::parse("https://om-cable.vercel.app").unwrap());
 
         let w = WebviewWindowBuilder::new(&_app, "chatapplication", url)
             .title("Ave Host")
